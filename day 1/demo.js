@@ -29,12 +29,8 @@ console.log(newArgv);
 let startingNum = 0
 for(let number of newArgv) {
   const fullNum = Number(number);
-  // console.log(Number.isInteger(fullNum));
-  if(fullNum > 0) {
-    if(Number.isInteger(fullNum)) {
-      startingNum += fullNum
-    }
-    
+  if(fullNum > 0 && Number.isInteger(fullNum)) {
+    startingNum += fullNum
   }
 }
 
