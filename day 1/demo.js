@@ -28,7 +28,10 @@ console.log(newArgv);
 // for....of mainly used for Arrays
 let startingNum = 0
 for(let number of newArgv) {
-  startingNum += Number(number)
+  const fullNum = Number(number);
+  if(fullNum > 0) {
+    startingNum += fullNum
+  }
 }
 
 console.log(startingNum);
